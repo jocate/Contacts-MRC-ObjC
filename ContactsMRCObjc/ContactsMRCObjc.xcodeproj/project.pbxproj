@@ -14,6 +14,8 @@
 		4F0F9687225E803400ED2BC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F9686225E803400ED2BC0 /* main.m */; };
 		4F0F968F225E828B00ED2BC0 /* JCSContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F968E225E828B00ED2BC0 /* JCSContactTableViewController.m */; };
 		4F0F9692225E82AB00ED2BC0 /* JCSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F9691225E82AB00ED2BC0 /* JCSDetailViewController.m */; };
+		4F0F9698225E840700ED2BC0 /* JCSContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F9697225E840700ED2BC0 /* JCSContact.m */; };
+		4F0F969B225E841F00ED2BC0 /* JCSContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F969A225E841F00ED2BC0 /* JCSContactController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		4F0F968E225E828B00ED2BC0 /* JCSContactTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSContactTableViewController.m; sourceTree = "<group>"; };
 		4F0F9690225E82AB00ED2BC0 /* JCSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSDetailViewController.h; sourceTree = "<group>"; };
 		4F0F9691225E82AB00ED2BC0 /* JCSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSDetailViewController.m; sourceTree = "<group>"; };
+		4F0F9696225E840700ED2BC0 /* JCSContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSContact.h; sourceTree = "<group>"; };
+		4F0F9697225E840700ED2BC0 /* JCSContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSContact.m; sourceTree = "<group>"; };
+		4F0F9699225E841F00ED2BC0 /* JCSContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSContactController.h; sourceTree = "<group>"; };
+		4F0F969A225E841F00ED2BC0 /* JCSContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSContactController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,8 @@
 		4F0F9676225E803100ED2BC0 /* ContactsMRCObjc */ = {
 			isa = PBXGroup;
 			children = (
+				4F0F9695225E83E600ED2BC0 /* Model Controller */,
+				4F0F9694225E83E100ED2BC0 /* Model */,
 				4F0F9693225E82B500ED2BC0 /* View Controllers */,
 				4F0F9677225E803100ED2BC0 /* AppDelegate.h */,
 				4F0F9678225E803100ED2BC0 /* AppDelegate.m */,
@@ -82,6 +90,24 @@
 				4F0F9691225E82AB00ED2BC0 /* JCSDetailViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4F0F9694225E83E100ED2BC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F0F9696225E840700ED2BC0 /* JCSContact.h */,
+				4F0F9697225E840700ED2BC0 /* JCSContact.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F0F9695225E83E600ED2BC0 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F0F9699225E841F00ED2BC0 /* JCSContactController.h */,
+				4F0F969A225E841F00ED2BC0 /* JCSContactController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +136,7 @@
 		4F0F966C225E803100ED2BC0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JCS;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = JS;
 				TargetAttributes = {
@@ -157,7 +184,9 @@
 				4F0F968F225E828B00ED2BC0 /* JCSContactTableViewController.m in Sources */,
 				4F0F9687225E803400ED2BC0 /* main.m in Sources */,
 				4F0F9692225E82AB00ED2BC0 /* JCSDetailViewController.m in Sources */,
+				4F0F9698225E840700ED2BC0 /* JCSContact.m in Sources */,
 				4F0F9679225E803100ED2BC0 /* AppDelegate.m in Sources */,
+				4F0F969B225E841F00ED2BC0 /* JCSContactController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M33TUA2Z8;
 				INFOPLIST_FILE = ContactsMRCObjc/Info.plist;
@@ -316,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M33TUA2Z8;
 				INFOPLIST_FILE = ContactsMRCObjc/Info.plist;

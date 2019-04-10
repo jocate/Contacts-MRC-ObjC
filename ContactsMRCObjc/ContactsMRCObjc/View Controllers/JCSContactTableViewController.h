@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class JCSContactController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JCSContactTableViewController : UITableViewController
+
+
+@property (retain) JCSContactController *contactController;
 
 @end
 

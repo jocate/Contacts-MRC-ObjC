@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class JCSContact;
+@class JCSContactController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JCSDetailViewController : UIViewController
@@ -18,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 
 - (IBAction)saveTapped:(id)sender;
+-(void)updateViews;
+
+@property (retain) JCSContact *contact;
+@property (retain) JCSContactController *contactController;
 
 @end
 
