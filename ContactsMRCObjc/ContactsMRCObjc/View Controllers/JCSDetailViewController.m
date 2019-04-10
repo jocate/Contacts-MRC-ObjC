@@ -59,7 +59,7 @@
         [self.navigationController popViewControllerAnimated:true];
         
     }
-    
+    [num release];
     
 }
 
